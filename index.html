@@ -65,7 +65,7 @@
       <section class="hero">
         <div class="hero-overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -127,31 +127,46 @@
           <h2 class="group-title">Чим ми займаємося</h2>
           <ul class="group-list">
             <li class="group-item">
-              <img
-                class="group-img"
-                src="./images/box-1.jpg"
-                alt="Користувач пише код на комп'ютері"
-                width="370"
-                height="294"
-              />
+              <div class="group-thumb">
+                <img
+                  class="group-img"
+                  src="./images/box-1.jpg"
+                  alt="Користувач пише код на комп'ютері"
+                  width="370"
+                  height="294"
+                />
+                <div class="group-overlay">
+                  <p class="overlay-title">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="group-item">
-              <img
-                class="group-img"
-                src="./images/box-2.jpg"
-                alt="Користувач синхронізує телефон з комп'ютером"
-                width="370"
-                height="294"
-              />
+              <div class="group-thumb">
+                <img
+                  class="group-img"
+                  src="./images/box-2.jpg"
+                  alt="Користувач синхронізує телефон з комп'ютером"
+                  width="370"
+                  height="294"
+                />
+                <div class="group-overlay">
+                  <p class="overlay-title">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="group-item">
-              <img
-                class="group-img"
-                src="./images/box-3.jpg"
-                alt="Користувач працює на графічному планшеті"
-                width="370"
-                height="294"
-              />
+              <div class="group-thumb">
+                <img
+                  class="group-img"
+                  src="./images/box-3.jpg"
+                  alt="Користувач працює на графічному планшеті"
+                  width="370"
+                  height="294"
+                />
+                <div class="group-overlay">
+                  <p class="overlay-title">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -581,5 +596,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-close" width="18" height="18">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
